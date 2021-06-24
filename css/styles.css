@@ -16,19 +16,26 @@ body {
 }
 
 /* HEADER */
-header nav {
+/* header nav {
     
-    color:#AABFB3;
+    color:#A9BFA3;
     height: 76px;
    
+} */
+#logo-header{
+    position:absolute;
+    top:1rem;
+    left:1rem;
 }
 
 header nav ul {
     list-style: none;
     padding: 1.75rem;
-    background-color:#AABFB3;
+    background-color:#F2F2F2;
     text-align: center;
+    position:relative;
 }
+
 
 header>nav>ul>li {
     display: inline-block;
@@ -36,8 +43,8 @@ header>nav>ul>li {
 }
 
 header>nav>ul>li>a {
-    /* border: 1px solid;  */
-    color:black;
+    border: 1px solid;  
+    color:#274001;
     border-radius: 10px; 
     text-transform: capitalize;
     text-decoration: none;
@@ -46,31 +53,39 @@ header>nav>ul>li>a {
     font-family: 'Lexend Zetta', sans-serif;
     
 }
-/* Change the link color to #698C58 on hover */
+/* Change the link color to #A9BFA3 on hover */
 li a:hover {
-    background-color:#698C58;
-  }
+    background-color:#D9AA55;
+  
 }    
 header {
     position: relative;
 }
+/* HERO IMAGE */
 
 header #hero {
-    height: 800px;
+    height: 600px;
     background: url("../img/plantclip.jpg") no-repeat center left;
     background-size:cover;
-   
+    position:relative;
 }
 
 header h1 {
-    position: absolute;
-    background-color:#AABFB3;
+    position:absolute;
+    background-color:#F2F2F2;
     top: 30%;
-    left: 60%;
-    color: rgb(228, 228, 228);
-    ;
-    font-size: 7rem;
+    left: 8%;
+    font-size: 4rem;
+   
 }
+
+h1{
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 2rem;
+    color:#274001;
+    
+}
+
 /* MAIN */
 
 main {
@@ -86,15 +101,13 @@ main {
 .column {
     float: left;
     width: 32%;
-    /* background-color: #698C58; */
-    /* border-radius: 25px; */
     padding: 1rem 1.5rem;
     margin: 0 .5rem;
+    
+    
 }
 .column h2.heading {
-    letter-spacing: 5px;
-    /* text-transform: uppercase; */
-    /* text-decoration: underline; */
+    /* letter-spacing: 5px; */
     color:black;
 }
 
@@ -104,15 +117,46 @@ main {
     padding-right: 2rem;
 }
 
-img{
-    width: 350px;
-    /* height: 400px;  */
-    
+ img{
+    width: 300px;
+} 
+
+
+rm {
+    padding: 2rem 2.5rem;
+    background-color:#D9AA55;
 }
 
+form .form_group {
+    background-color:#9BBFBF;
+    padding: 1rem;
+    margin: .5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+form>.form_group>select,
+form>.form_group>textarea {
+    display: block;
+}
+/* FOOTER */
 footer {
     clear: both;
-    /* text-align: center; */
-    height:75px;
-    background-color:#AABFB3;
+    text-align: center; 
+    height:200px;
+    background-color:#9BBFBF;
+}
+.social-link-space{
+    margin-left:1.5rem;
+}
+footer>p {
+    font-size: 10rem;
+    margin-bottom: 4rem;
+}
+footer .row>p {
+    margin-top: 7rem;
+}
+footer #social_links {
+    text-align: center;
+    color:black;
+    
 }
